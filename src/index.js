@@ -3,6 +3,7 @@ import Experiense from './Experiense';
 import './styles.css';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import Box from './Box';
 
 const root = createRoot(document.getElementById("root"));
 
