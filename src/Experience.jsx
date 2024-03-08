@@ -1,6 +1,6 @@
 import { OrbitControls } from "@react-three/drei";
 
-const Experiense = () => {
+const Experience = () => {
   return (
     <>
       <ambientLight intensity={0.5} />
@@ -15,7 +15,7 @@ const Experiense = () => {
         <meshLambertMaterial color="blue" />
       </mesh>
       <mesh position={[0, 7.52, 30]}>
-        <coneGeometry args={[3, 15, 9]} />
+        <coneGeometry args={[2, 15, 5]} />
         <meshLambertMaterial color="brown" flatShading={true} />
       </mesh>
       <mesh position={[0, 14, 30]}>
@@ -26,4 +26,4 @@ const Experiense = () => {
   );
 };
 
-export default Experiense;
+export default Experience;
