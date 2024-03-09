@@ -7,7 +7,7 @@ import Aleja from "./integrantes/aleja";
 import Valeria from "./integrantes/valeria";
 import Andres from "./integrantes/andres";
 import Jose from "./integrantes/jose";
-
+import Cristian from "./integrantes/Cristian";
 const Experience = () => {
   
   return (
@@ -21,14 +21,7 @@ const Experience = () => {
         <meshStandardMaterial color="0xffff00" />
       </mesh>
 
-      <mesh position={[0, 7.52, 30]}>
-        <coneGeometry args={[2, 15, 5]} />
-        <meshLambertMaterial color="brown" flatShading={true} />
-      </mesh>
-      <mesh position={[0, 14, 30]}>
-        <sphereGeometry args={[5, 32, 32]} />
-        <meshToonMaterial color="green" />
-      </mesh>
+      <Cristian/>
       <Maik />
       <Briggite/>
       <Aleja/>
