@@ -1,4 +1,4 @@
-import { Cloud, Environment, Sky, Sparkles } from "@react-three/drei";
+import { Cloud, Environment, Sky, Sparkles, Stars } from "@react-three/drei";
 
 export default function EnviromentMap(){
 
@@ -34,6 +34,13 @@ export default function EnviromentMap(){
             depth={5}
             segments={20}
             position={[10, 5, 150]}
+            />
+            <Stars
+            radius={100}
+            depth={50}
+            count={5000}
+            factor={2}
+            saturation={0}
             />
        </>
     )

@@ -11,11 +11,13 @@ import Cristian from "./integrantes/Cristian";
 import World from "./world/World";
 import Lights from "./lights/Lights";
 import EnviromentMap from "./enviroments/EnviromentMap";
+import {Perf} from "r3f-perf";
 
 const Experience = () => {
   
   return (
     <>
+      <Perf position="top-left" />
       <Lights />
       <EnviromentMap />
       <OrbitControls makeDefault />
