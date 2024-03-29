@@ -15,7 +15,7 @@ const Valeria = () => {
     }); 
   
     return (
-      <mesh position={[0, 3, 19]}  ref={cylinderRef}>
+      <mesh position={[10, 3, 59]}  ref={cylinderRef}>
         <cylinderGeometry args={[1, 5,6]} />
         <meshPhongMaterial color="purple" emissive={0.2} />
       </mesh>

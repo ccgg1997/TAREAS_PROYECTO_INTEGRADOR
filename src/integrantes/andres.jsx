@@ -14,7 +14,7 @@ const Andres = () => {
     return (
         
         <>
-            <mesh position={[0,1,45]} ref={boxRef}>
+            <mesh position={[10,1,95]} ref={boxRef}>
                 <boxGeometry args={[2, 2, 2]} />
                 <meshLambertMaterial color="blue" />
             </mesh>

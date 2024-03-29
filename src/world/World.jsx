@@ -3,6 +3,8 @@ import { RepeatWrapping } from 'three';
 
 export default function World(props){
     const {nodes, materials} =useGLTF('/assets/models/world/squisgame.glb');
+    console.log("hola")
+    console.log(nodes)
     const PATH = '/assets/textures/floor/';
     const propsTexture =  useTexture({
         map : PATH + 'gray_rocks_diff_1k.jpg',
