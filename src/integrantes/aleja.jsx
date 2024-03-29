@@ -7,14 +7,14 @@ const Aleja = () => {
 
   useFrame((state, delta) => {
 
-    sphereRef.current.position.z = -5 * Math.sin(state.clock.getElapsedTime());
+    sphereRef.current.position.z = 42+6.5* Math.sin(state.clock.getElapsedTime());
 
     sphereRef.current.rotation.x += 0.3 * delta; 
   });
 
   return (
     <>
-      <mesh position={[0, 2, 2]} ref={sphereRef} >
+      <mesh position={[10, 2, 62]} ref={sphereRef} >
         <sphereGeometry args={[2, 32, 32]} />
         <meshPhongMaterial color="green" />
       </mesh>

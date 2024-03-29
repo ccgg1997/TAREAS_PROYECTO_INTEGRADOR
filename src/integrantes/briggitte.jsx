@@ -7,14 +7,14 @@ const Briggite = () => {
 
   useFrame((state, delta) => {
 
-    sphereRef.current.position.x = 5 * Math.cos(state.clock.getElapsedTime());
+    sphereRef.current.position.x = 10-7 * Math.cos(state.clock.getElapsedTime());
 
     sphereRef.current.rotation.y += 0.3 * delta; 
   });
 
   return (
     <>
-      <mesh position={[0, 2, 0]} ref={sphereRef} >
+      <mesh position={[20, 2, 42]} ref={sphereRef} >
         <sphereGeometry args={[2, 32, 32]} />
         <meshPhongMaterial color="green" />
       </mesh>
