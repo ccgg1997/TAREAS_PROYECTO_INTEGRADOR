@@ -32,17 +32,27 @@ export default function World(props){
             <group>
                 <mesh
                     castShadow
-                    receiveShadow
+                    receiveShadow={true}
                     geometry={nodes.Walls.geometry}
                     material={materials.Material}
                 />
                 <mesh
                     castShadow
-                    receiveShadow
+                    receiveShadow={true}
                     geometry={nodes.Floor.geometry}
                     material={materials.Material}
                 >
                     <meshStandardMaterial {...propsTexture} />
+                </mesh>
+                <mesh castShadow={true}
+                geometry={nodes.WoodenFence.geometry}
+                 
+                >
+                    <meshStandardMaterial 
+                    color={'#FF8E00'}
+                    metalness={0.5}
+                    roughness={0.5}
+                    />
                 </mesh>
             </group>
         </group>

@@ -11,7 +11,7 @@ const Jose = () => {
   });
 
   return (
-    <mesh position={[10,1,82]} ref={dodecahedronRef}>
+    <mesh position={[10,1,152]} ref={dodecahedronRef}>
       <dodecahedronGeometry args={[1]} />
       <meshPhongMaterial color="orange" />
     </mesh>

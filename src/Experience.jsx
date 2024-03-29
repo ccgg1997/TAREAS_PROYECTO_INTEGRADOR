@@ -9,12 +9,15 @@ import Andres from "./integrantes/andres";
 import Jose from "./integrantes/jose";
 import Cristian from "./integrantes/Cristian";
 import World from "./world/World";
+import Lights from "./lights/Lights";
+import EnviromentMap from "./enviroments/EnviromentMap";
+
 const Experience = () => {
   
   return (
     <>
-      <ambientLight />
-      <directionalLight position={[10, 10,5]} />
+      <Lights />
+      <EnviromentMap />
       <OrbitControls makeDefault />
       <Andres/>
       <Maik />

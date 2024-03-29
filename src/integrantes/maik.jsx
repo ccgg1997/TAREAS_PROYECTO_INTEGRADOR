@@ -13,7 +13,7 @@ const Maik = () => {
   })
   return (
         <>
-            <mesh position={[10, 5, 75]} ref={boxRef1}>
+            <mesh position={[10, 5, 135]} ref={boxRef1}>
                 <torusGeometry args={[3, 2, 8, 100]} />
                 <meshPhongMaterial color="red" />
             </mesh>
